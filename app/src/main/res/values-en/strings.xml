@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test Solution</string>
+    <string name="text_ok">OK</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Correct answer is:</string>
+</resources>
