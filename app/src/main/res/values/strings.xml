@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Решение тестов</string>
     <string name="text_ok">OK</string>
     <string name="correct">Правильно!</string>
     <string name="incorrect">Правильный ответ:</string>
+    <string name="image_of_question">Image of question</string>
+    <string name="text_answer">Ответ</string>
+    <string name="app_name">БДЖ тест</string>
 </resources>

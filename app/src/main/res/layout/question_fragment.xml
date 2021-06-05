@@ -29,8 +29,36 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginRight="24dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     tools:text="Question text" />
+
+
+                <ImageView
+                    android:id="@+id/questionImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:contentDescription="@string/image_of_question"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    tools:src="@tools:sample/avatars" />
+
+                <EditText
+                    android:id="@+id/editTextAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:autofillHints="@string/text_answer"
+                    android:hint="@string/text_answer"
+                    android:inputType="textPersonName"
+                    tools:text="Answer" />
 
                 <RadioGroup
                     android:id="@+id/oneChoiceGroup"

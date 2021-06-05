@@ -35,9 +35,12 @@ class QuestionFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
         val fileAssets = (activity as AppCompatActivity).assets
-        val files = mutableListOf(
-            QuestionsFile(fileAssets.open("single_questions_en.txt"), QuestionType.Single),
-            QuestionsFile(fileAssets.open("multi_questions_en.txt"), QuestionType.Multi)
+        val files = listOf(
+            QuestionsFile("singleQuestions_ru.txt", QuestionType.Single),
+            QuestionsFile("multiQuestions_ru.txt", QuestionType.Multiply),
+            QuestionsFile("singlePictureQuestions_ru.txt", QuestionType.PictureSingle),
+            QuestionsFile("multiPictureQuestions_ru.txt", QuestionType.PictureMultiply),
+            QuestionsFile("inputQuestions_ru.txt", QuestionType.Input),
         )
 
         questionViewModel =
@@ -48,26 +51,40 @@ class QuestionFragment : Fragment() {
                 }
             }).get(QuestionViewModel::class.java)
 
-        questionViewModel.parseQuestions(files)
+        questionViewModel.parseQuestions(fileAssets, files)
 
         questionViewModel.question.observe(this) {
             question = it
             binding.multiplyChoiceGroup.visibility = View.GONE
             binding.oneChoiceGroup.visibility = View.GONE
+            binding.questionImage.visibility = View.GONE
+            binding.editTextAnswer.visibility = View.GONE
 
             when (it.questionType) {
                 QuestionType.Single -> {
                     binding.oneChoiceGroup.visibility = View.VISIBLE
                     createSingleQuestion(it)
                 }
-                QuestionType.Multi -> {
+                QuestionType.Multiply -> {
                     binding.multiplyChoiceGroup.visibility = View.VISIBLE
                     createMultiplyQuestion(it)
                 }
 
-                QuestionType.PictureSingle -> TODO()
+                QuestionType.PictureSingle -> {
+                    binding.questionImage.visibility = View.VISIBLE
+                    binding.oneChoiceGroup.visibility = View.VISIBLE
+                    createSingeImageQuestion(it)
+                }
 
-                QuestionType.PictureMulti -> TODO()
+                QuestionType.PictureMultiply -> {
+                    binding.questionImage.visibility = View.VISIBLE
+                    binding.multiplyChoiceGroup.visibility = View.VISIBLE
+                    createMultiplyImageQuestion(it)
+                }
+                QuestionType.Input -> {
+                    binding.editTextAnswer.visibility = View.VISIBLE
+                    createInputQuestion(it)
+                }
             }
         }
     }
@@ -87,6 +104,22 @@ class QuestionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.acceptButton.setOnClickListener { checkAnswer() }
+    }
+
+    private fun createInputQuestion(question: Question) {
+        binding.editTextAnswer.text.clear()
+        binding.editTextAnswer.requestFocus()
+        binding.questionText.text = question.questionText
+    }
+
+    private fun createSingeImageQuestion(question: Question) {
+        binding.questionImage.setImageBitmap(question.image)
+        createSingleQuestion(question)
+    }
+
+    private fun createMultiplyImageQuestion(question: Question) {
+        binding.questionImage.setImageBitmap(question.image)
+        createMultiplyQuestion(question)
     }
 
     private fun createSingleQuestion(question: Question) {
@@ -145,15 +178,29 @@ class QuestionFragment : Fragment() {
                 )
             }
 
-            QuestionType.Multi -> {
+            QuestionType.Multiply -> binding.multiplyChoiceGroup.children.forEach { childrenView ->
+                val checkbox = childrenView as CheckBox
+                if (checkbox.isChecked)
+                    actualAnswers.add(checkbox.text.toString())
+            }
+
+            QuestionType.PictureSingle -> view?.let {
+                actualAnswers.add(
+                    it.findViewById<RadioButton>(binding.oneChoiceGroup.checkedRadioButtonId)
+                        .text
+                        .toString()
+                )
+            }
+
+            QuestionType.PictureMultiply ->
                 binding.multiplyChoiceGroup.children.forEach { childrenView ->
                     val checkbox = childrenView as CheckBox
                     if (checkbox.isChecked)
                         actualAnswers.add(checkbox.text.toString())
                 }
-            }
-            QuestionType.PictureSingle -> TODO()
-            QuestionType.PictureMulti -> TODO()
+
+            QuestionType.Input ->
+                actualAnswers.add(binding.editTextAnswer.text.toString().lowercase())
         }
 
         val message = if (question.correctAnswers.all { actualAnswers.contains(it) })

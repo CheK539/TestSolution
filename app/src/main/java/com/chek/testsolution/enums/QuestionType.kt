@@ -2,9 +2,10 @@ package com.chek.testsolution.enums
 
 enum class QuestionType(val idType: Int, val typeString: String) {
     Single(0, "Single"),
-    Multi(1, "Multi"),
+    Multiply(1, "Multiply"),
     PictureSingle(2, "PictureSingle"),
-    PictureMulti(3, "PictureMulti");
+    PictureMultiply(3, "PictureMultiply"),
+    Input(4, "Input");
 
     companion object {
         fun fromString(value: String) = values().first { it.typeString == value }

@@ -4,4 +4,6 @@
     <string name="text_ok">OK</string>
     <string name="correct">Correct!</string>
     <string name="incorrect">Correct answer is:</string>
+    <string name="image_of_question">Image of question</string>
+    <string name="text_answer">Answer</string>
 </resources>
