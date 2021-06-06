@@ -35,15 +35,15 @@ object QuestionsParser {
                         correctAnswers = mutableListOf()
                         incorrectAnswers = mutableListOf()
                     }
-                    questionText = line.takeLast(line.length - 1)
+                    questionText = line.takeLast(line.length - 1).trim()
                 }
 
                 '+' -> {
-                    correctAnswers.add(line.takeLast(line.length - 1).lowercase())
+                    correctAnswers.add(line.takeLast(line.length - 1).trim())
                 }
 
                 '-' -> {
-                    incorrectAnswers.add(line.takeLast(line.length - 1).lowercase())
+                    incorrectAnswers.add(line.takeLast(line.length - 1).trim())
                 }
             }
         }
@@ -92,15 +92,15 @@ object QuestionsParser {
                         correctAnswers = mutableListOf()
                         incorrectAnswers = mutableListOf()
                     }
-                    questionText = line.takeLast(line.length - 1)
+                    questionText = line.takeLast(line.length - 1).trim()
                 }
 
                 '+' -> {
-                    correctAnswers.add(line.takeLast(line.length - 1).lowercase())
+                    correctAnswers.add(line.takeLast(line.length - 1).trim())
                 }
 
                 '-' -> {
-                    incorrectAnswers.add(line.takeLast(line.length - 1).lowercase())
+                    incorrectAnswers.add(line.takeLast(line.length - 1).trim())
                 }
             }
         }

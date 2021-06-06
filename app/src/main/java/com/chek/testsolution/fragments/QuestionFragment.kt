@@ -1,5 +1,6 @@
 package com.chek.testsolution.fragments
 
+import android.content.res.AssetManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,30 +13,37 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.children
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.chek.testsolution.R
 import com.chek.testsolution.databinding.QuestionFragmentBinding
 import com.chek.testsolution.enums.QuestionType
 import com.chek.testsolution.models.Question
 import com.chek.testsolution.models.QuestionsFile
+import com.chek.testsolution.models.QuestionsData
 import com.chek.testsolution.viewModels.QuestionViewModel
 
 class QuestionFragment : Fragment() {
 
     companion object {
+        const val TAG = "CorrectCount"
+
         fun newInstance() = QuestionFragment()
     }
 
     private lateinit var questionViewModel: QuestionViewModel
     private lateinit var binding: QuestionFragmentBinding
     private lateinit var question: Question
+    private lateinit var questionsData: QuestionsData
+
+    private var correctCount = 0
+    private var files = listOf<QuestionsFile>()
+    private var fileAsset: AssetManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val fileAssets = (activity as AppCompatActivity).assets
-        val files = listOf(
+        fileAsset = (activity as AppCompatActivity).assets
+        files = listOf(
             QuestionsFile("singleQuestions_ru.txt", QuestionType.Single),
             QuestionsFile("multiQuestions_ru.txt", QuestionType.Multiply),
             QuestionsFile("singlePictureQuestions_ru.txt", QuestionType.PictureSingle),
@@ -43,15 +51,16 @@ class QuestionFragment : Fragment() {
             QuestionsFile("inputQuestions_ru.txt", QuestionType.Input),
         )
 
-        questionViewModel =
-            ViewModelProvider(requireActivity(), object : ViewModelProvider.Factory {
-                override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-                    @Suppress("UNCHECKED_CAST")
-                    return QuestionViewModel() as T
-                }
-            }).get(QuestionViewModel::class.java)
+        questionViewModel = ViewModelProvider(requireActivity()).get(QuestionViewModel::class.java)
 
-        questionViewModel.parseQuestions(fileAssets, files)
+        if (savedInstanceState == null)
+            fileAsset?.let { questionViewModel.parseQuestions(it, files) }
+
+        questionViewModel.questionsData.observe(this) {
+            questionsData = it
+            (activity as AppCompatActivity).supportActionBar?.title =
+                "${it.complete}/${it.total}, $correctCount"
+        }
 
         questionViewModel.question.observe(this) {
             question = it
@@ -129,7 +138,7 @@ class QuestionFragment : Fragment() {
             LinearLayout.LayoutParams.WRAP_CONTENT
         ).apply { setMargins(0, 0, 0, 24) }
 
-        val answers = question.correctAnswers + question.incorrectAnswers
+        val answers = (question.correctAnswers + question.incorrectAnswers).shuffled()
 
         answers.forEach { answer ->
             val radioButton = RadioButton(context).apply {
@@ -151,7 +160,7 @@ class QuestionFragment : Fragment() {
             LinearLayout.LayoutParams.WRAP_CONTENT
         ).apply { setMargins(0, 0, 0, 24) }
 
-        val answers = question.correctAnswers + question.incorrectAnswers
+        val answers = (question.correctAnswers + question.incorrectAnswers).shuffled()
 
         answers.forEach { answer ->
             val checkbox = CheckBox(context).apply {
@@ -173,22 +182,24 @@ class QuestionFragment : Fragment() {
             QuestionType.Single -> view?.let {
                 actualAnswers.add(
                     it.findViewById<RadioButton>(binding.oneChoiceGroup.checkedRadioButtonId)
-                        .text
+                        ?.text
                         .toString()
+                        .lowercase()
                 )
             }
 
             QuestionType.Multiply -> binding.multiplyChoiceGroup.children.forEach { childrenView ->
                 val checkbox = childrenView as CheckBox
                 if (checkbox.isChecked)
-                    actualAnswers.add(checkbox.text.toString())
+                    actualAnswers.add(checkbox.text.toString().lowercase())
             }
 
             QuestionType.PictureSingle -> view?.let {
                 actualAnswers.add(
                     it.findViewById<RadioButton>(binding.oneChoiceGroup.checkedRadioButtonId)
-                        .text
+                        ?.text
                         .toString()
+                        .lowercase()
                 )
             }
 
@@ -196,23 +207,47 @@ class QuestionFragment : Fragment() {
                 binding.multiplyChoiceGroup.children.forEach { childrenView ->
                     val checkbox = childrenView as CheckBox
                     if (checkbox.isChecked)
-                        actualAnswers.add(checkbox.text.toString())
+                        actualAnswers.add(checkbox.text.toString().lowercase())
                 }
 
             QuestionType.Input ->
                 actualAnswers.add(binding.editTextAnswer.text.toString().lowercase())
         }
 
-        val message = if (question.correctAnswers.all { actualAnswers.contains(it) })
+        val message = if (question.correctAnswers.all { actualAnswers.contains(it.lowercase()) }) {
+            correctCount++
             "${resources.getText(R.string.correct)}"
-        else
+        } else
             "${resources.getText(R.string.incorrect)}\n${question.correctAnswers.joinToString("\n")}"
 
         ResultDialogFragment(message) { _, _ ->
-            questionViewModel.loadQuestion()
+            if (questionsData.complete < questionsData.total)
+                questionViewModel.loadQuestion()
+            else
+                fileAsset?.let {
+                    questionViewModel.parseQuestions(it, files)
+                    val percent = correctCount.toFloat() / questionsData.total.toFloat() * 100
+                    val result = "${resources.getText(R.string.text_correct)}" +
+                            " ${"%.2f".format(percent)}%"
+                    correctCount = 0
+                    ResultDialogFragment(result) { _, _ -> }
+                        .show(childFragmentManager, ResultDialogFragment.TAG)
+                }
         }.show(
             childFragmentManager,
             ResultDialogFragment.TAG
         )
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putInt(TAG, correctCount)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+
+        correctCount = savedInstanceState?.getInt(TAG) ?: 0
     }
 }
