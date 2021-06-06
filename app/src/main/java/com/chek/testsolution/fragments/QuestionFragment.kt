@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.CheckBox
 import android.widget.LinearLayout
 import android.widget.RadioButton
@@ -49,6 +50,7 @@ class QuestionFragment : Fragment() {
             QuestionsFile("singlePictureQuestions_ru.txt", QuestionType.PictureSingle),
             QuestionsFile("multiPictureQuestions_ru.txt", QuestionType.PictureMultiply),
             QuestionsFile("inputQuestions_ru.txt", QuestionType.Input),
+            QuestionsFile("orderQuestions_ru.txt", QuestionType.Input),
         )
 
         questionViewModel = ViewModelProvider(requireActivity()).get(QuestionViewModel::class.java)
@@ -58,8 +60,14 @@ class QuestionFragment : Fragment() {
 
         questionViewModel.questionsData.observe(this) {
             questionsData = it
+
+            val percent = if (questionsData.complete > 1)
+                correctCount.toFloat() / (questionsData.complete - 1).toFloat() * 100
+            else
+                0f
+            val result = "${"%.2f".format(percent)}%"
             (activity as AppCompatActivity).supportActionBar?.title =
-                "${it.complete}/${it.total}, $correctCount"
+                "${it.complete}/${it.total}, $result"
         }
 
         questionViewModel.question.observe(this) {
@@ -210,21 +218,26 @@ class QuestionFragment : Fragment() {
                         actualAnswers.add(checkbox.text.toString().lowercase())
                 }
 
-            QuestionType.Input ->
-                actualAnswers.add(binding.editTextAnswer.text.toString().lowercase())
+            QuestionType.Input -> {
+                actualAnswers.add(binding.editTextAnswer.text.toString().trim().lowercase())
+                hideInput()
+            }
         }
 
+        var isCorrect = false
         val message = if (question.correctAnswers.all { actualAnswers.contains(it.lowercase()) }) {
-            correctCount++
+            isCorrect = true
             "${resources.getText(R.string.correct)}"
         } else
             "${resources.getText(R.string.incorrect)}\n${question.correctAnswers.joinToString("\n")}"
 
         ResultDialogFragment(message) { _, _ ->
-            if (questionsData.complete < questionsData.total)
+            if (questionsData.complete < questionsData.total) {
+                correctCount = if (isCorrect) ++correctCount else correctCount
                 questionViewModel.loadQuestion()
-            else
+            } else
                 fileAsset?.let {
+                    correctCount = if (isCorrect) ++correctCount else correctCount
                     questionViewModel.parseQuestions(it, files)
                     val percent = correctCount.toFloat() / questionsData.total.toFloat() * 100
                     val result = "${resources.getText(R.string.text_correct)}" +
@@ -237,6 +250,12 @@ class QuestionFragment : Fragment() {
             childFragmentManager,
             ResultDialogFragment.TAG
         )
+    }
+
+    private fun hideInput() {
+        val inputMethodManager =
+            activity?.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(activity?.currentFocus?.windowToken, 0)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

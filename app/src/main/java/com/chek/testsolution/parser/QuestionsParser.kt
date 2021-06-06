@@ -45,6 +45,8 @@ object QuestionsParser {
                 '-' -> {
                     incorrectAnswers.add(line.takeLast(line.length - 1).trim())
                 }
+
+                else -> questionText += "\n$line"
             }
         }
 
