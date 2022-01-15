@@ -2,9 +2,9 @@
     <string name="text_ok">OK</string>
     <string name="correct">Правильно!</string>
     <string name="incorrect">Правильный ответ:</string>
-    <string name="image_of_question">Image of question</string>
+    <string name="image_of_question">Изображение вопроса</string>
     <string name="text_answer">Ответ</string>
-    <string name="app_name">БЖД тест</string>
+    <string name="app_name">Право тест</string>
     <string name="text_done">Выполнено:</string>
     <string name="text_correct">Правильных:</string>
 </resources>
