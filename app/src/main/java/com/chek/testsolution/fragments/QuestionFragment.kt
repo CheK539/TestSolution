@@ -225,11 +225,12 @@ class QuestionFragment : Fragment() {
         }
 
         var isCorrect = false
-        val message = if (question.correctAnswers.all { actualAnswers.contains(it.lowercase()) }) {
+        val message = if (question.correctAnswers.all { actualAnswers.contains(it.lowercase()) } &&
+                actualAnswers.size == question.correctAnswers.size) {
             isCorrect = true
             "${resources.getText(R.string.correct)}"
         } else
-            "${resources.getText(R.string.incorrect)}\n${question.correctAnswers.joinToString("\n")}"
+            "${resources.getText(R.string.incorrect)}\n\n${question.correctAnswers.joinToString("\n\n")}"
 
         ResultDialogFragment(message) { _, _ ->
             if (questionsData.complete < questionsData.total) {
