@@ -40,6 +40,9 @@ class QuestionViewModel : ViewModel() {
 
                 QuestionType.Input ->
                     questions.addAll(QuestionsParser.parseQuestions(fileAsset, questionsFile))
+
+                QuestionType.Order ->
+                    questions.addAll(QuestionsParser.parseQuestions(fileAsset, questionsFile))
             }
         }
 

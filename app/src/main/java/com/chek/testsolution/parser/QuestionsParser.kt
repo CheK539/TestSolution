@@ -21,7 +21,7 @@ object QuestionsParser {
         var questionText = ""
 
         lines.forEach { line ->
-            when (line[0]) {
+            when (line.firstOrNull()) {
                 '#' -> {
                     if (correctAnswers.size != 0) {
                         val currentQuestion = createQuestion(

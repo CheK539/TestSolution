@@ -26,9 +26,9 @@ import com.chek.testsolution.viewModels.QuestionViewModel
 class QuestionFragment : Fragment() {
 
     companion object {
-        const val TAG = "CorrectCount"
+        private val LETTERS = listOf('A', 'B', 'C', 'D', 'E', 'F')
 
-        fun newInstance() = QuestionFragment()
+        const val TAG = "CorrectCount"
     }
 
     private lateinit var questionViewModel: QuestionViewModel
@@ -39,6 +39,7 @@ class QuestionFragment : Fragment() {
     private var correctCount = 0
     private var files = listOf<QuestionsFile>()
     private var fileAsset: AssetManager? = null
+    private val questionsMap = mutableMapOf<Char, String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +51,7 @@ class QuestionFragment : Fragment() {
             QuestionsFile("singlePictureQuestions_ru.txt", QuestionType.PictureSingle),
             QuestionsFile("multiPictureQuestions_ru.txt", QuestionType.PictureMultiply),
             QuestionsFile("inputQuestions_ru.txt", QuestionType.Input),
-            QuestionsFile("orderQuestions_ru.txt", QuestionType.Input),
+            QuestionsFile("orderQuestions_ru.txt", QuestionType.Order),
         )
 
         questionViewModel = ViewModelProvider(requireActivity()).get(QuestionViewModel::class.java)
@@ -102,6 +103,10 @@ class QuestionFragment : Fragment() {
                     binding.editTextAnswer.visibility = View.VISIBLE
                     createInputQuestion(it)
                 }
+                QuestionType.Order -> {
+                    binding.editTextAnswer.visibility = View.VISIBLE
+                    createOrderQuestion(question)
+                }
             }
         }
     }
@@ -127,6 +132,23 @@ class QuestionFragment : Fragment() {
         binding.editTextAnswer.text.clear()
         binding.editTextAnswer.requestFocus()
         binding.questionText.text = question.questionText
+    }
+
+    private fun createOrderQuestion(question: Question) {
+        binding.editTextAnswer.text.clear()
+        binding.editTextAnswer.requestFocus()
+
+        val variants = question.correctAnswers.shuffled()
+            .mapIndexed { index, variant ->
+                questionsMap[LETTERS[index]] = variant
+                "${LETTERS[index]}) $variant"
+            }
+
+        binding.questionText.text = requireContext().getString(
+            R.string.question_text,
+            question.questionText,
+            variants.joinToString("\n")
+        )
     }
 
     private fun createSingeImageQuestion(question: Question) {
@@ -222,11 +244,24 @@ class QuestionFragment : Fragment() {
                 actualAnswers.add(binding.editTextAnswer.text.toString().trim().lowercase())
                 hideInput()
             }
+
+            QuestionType.Order -> {
+                binding.editTextAnswer.text.toString()
+                    .trim()
+                    .uppercase()
+                    .forEach { symbol ->
+                        val actualAnswer = questionsMap
+                            .getOrElse(symbol) { "" }
+                            .lowercase()
+                        actualAnswers.add(actualAnswer)
+                    }
+                hideInput()
+            }
         }
 
         var isCorrect = false
-        val message = if (question.correctAnswers.all { actualAnswers.contains(it.lowercase()) } &&
-                actualAnswers.size == question.correctAnswers.size) {
+
+        val message = if (isCorrectAnswer(actualAnswers, question.questionType)) {
             isCorrect = true
             "${resources.getText(R.string.correct)}"
         } else
@@ -251,6 +286,19 @@ class QuestionFragment : Fragment() {
             childFragmentManager,
             ResultDialogFragment.TAG
         )
+    }
+
+    private fun isCorrectAnswer(actualAnswers: List<String>, questionType: QuestionType): Boolean {
+        return if (questionType != QuestionType.Order) {
+            question.correctAnswers.all { actualAnswers.contains(it.lowercase()) }
+        } else {
+            var count = 0
+            question.correctAnswers.all { answer ->
+                val isCorrect = answer.lowercase() == actualAnswers.getOrNull(count)
+                count++
+                isCorrect
+            }
+        } && actualAnswers.size == question.correctAnswers.size
     }
 
     private fun hideInput() {
