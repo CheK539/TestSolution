@@ -1,0 +1,822 @@
+[
+    {
+        "type": "radio",
+        "legend": "«Тест Купера» является тестом для определения уровня развития физических способностей...",
+        "fields": [
+            {
+                "text": "выносливости",
+                "correct": true
+            },
+            {
+                "text": "скоростных"
+            },
+            {
+                "text": "координационных"
+            },
+            {
+                "text": "силовых"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Сила, при которой напряжение нарастает в связи с изменением длины мышц (толкание спортивных снарядов), называется...",
+        "fields": [
+            {
+                "text": "координационная"
+            },
+            {
+                "text": "статическая"
+            },
+            {
+                "text": "скоростная"
+            },
+            {
+                "text": "динамическая",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Способность длительно поддерживать высокую скорость потребления кислорода, т. е. максимальное время работы на уровне максимального потребления кислорода, называется...",
+        "fields": [
+            {
+                "text": "аэробной емкостью",
+                "correct": true
+            },
+            {
+                "text": "гипоксией"
+            },
+            {
+                "text": "гипотонией"
+            },
+            {
+                "text": "анаэробной емкостью"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Способность совершать движения с большой амплитудой за счет собственных усилий называется...",
+        "fields": [
+            {
+                "text": "активная гибкость",
+                "correct": true
+            },
+            {
+                "text": "разгибание"
+            },
+            {
+                "text": "гипермобильность"
+            },
+            {
+                "text": "вращение"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "При утомлении активная гибкость...",
+        "fields": [
+            {
+                "text": "увеличивается, пассивная – увеличивается"
+            },
+            {
+                "text": "снижается, пассивная – снижается"
+            },
+            {
+                "text": "снижается, пассивная – увеличивается",
+                "correct": true
+            },
+            {
+                "text": "увеличивается, пассивная – снижается"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Способность рационально согласовывать движения звеньев тела человека при решении конкретных двигательных задач называется...",
+        "fields": [
+            {
+                "text": "ловкость",
+                "correct": true
+            },
+            {
+                "text": "выносливость"
+            },
+            {
+                "text": "быстрота"
+            },
+            {
+                "text": "гибкость"
+            }
+        ]
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Установите соответствие между физическими способностями и функциональными свойствами организма."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Физические способности__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Функциональные свойства организма__ .{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Сила"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Быстрота"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_o52b6E0u"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Выносливость"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_nCrbWFJk"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Гибкость"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_ZOsI9WCG"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Ловкость (координация)"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_xAET7wBb"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Способность совершать наибольшее количество движений в минимальный для данных условий отрезок времени",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Способность преодолевать внешнее сопротивление за счет мышечного сокращения",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "Способность к выполнению сложных по координации движений, рационально согласовывать движения звеньев тела человека при решении конкретных двигательных задач",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "Способность человека противостоять утомлению и выполнять какую-либо деятельность без снижения эффективности",
+                    "cell_id": "id_nCrbWFJk"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "Способность выполнять движения с большой или максимальной амплитудой благодаря высокой суставной подвижности, растяжимости мышц и эластичности связочного аппарата",
+                    "cell_id": "id_ZOsI9WCG"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Установите соответствие между физическими способностями и предложенными тестами для их оценки."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Физические способности__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Тест (описание)__ .{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Сила"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Быстрота"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_cQ6IwjC2"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Выносливость"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_FDvu9JIz"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Гибкость"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_jR9PNFm1"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Координация"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_mPzlgLqB"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Скоростно-силовая"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_72iGgceV"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w30"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_SBt8bwxk",
+                    "title": "Велоэргометрия",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_gMuejE5p",
+                    "title": "Плавание 50 м",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_E8oQejZl",
+                    "title": "Подбрасывание и ловля мяча с одновременным поворотом туловища на 360 градусов",
+                    "cell_id": "id_mPzlgLqB"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "Теппинг-тест",
+                    "cell_id": "id_cQ6IwjC2"
+                },
+                {
+                    "id": "id_pZOea5Qn",
+                    "title": "Бег 5000 м",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "Тест Купера",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_vmOX2t6L",
+                    "title": "Статическое равновесие",
+                    "cell_id": "id_mPzlgLqB"
+                },
+                {
+                    "id": "id_u18bls3R",
+                    "title": "Челночный бег 3 раза по 10 м",
+                    "cell_id": "id_mPzlgLqB"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "Бег на 100 м",
+                    "cell_id": "id_cQ6IwjC2"
+                },
+                {
+                    "id": "id_fq1H7ApR",
+                    "title": "Прыжки в длину с разбега",
+                    "cell_id": "id_72iGgceV"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Время удержания прямых ног в упоре сзади",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_Jk05ODvt",
+                    "title": "Поперечный шпагат",
+                    "cell_id": "id_jR9PNFm1"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Cгибание и разгибание рук в упоре на брусьях",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "Поднимание ног из положения лежа на спине",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "Поднимание ног в висе до касания перекладины",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_VKYvtqWH",
+                    "title": "Прыжки через скакалку",
+                    "cell_id": "id_mPzlgLqB"
+                },
+                {
+                    "id": "id_g2EmJUba",
+                    "title": "Степ-тест",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_ds6ZrW57",
+                    "title": "Выкрут прямых рук назад",
+                    "cell_id": "id_jR9PNFm1"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "Поднимание туловища из положение лежа на животе,",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_UzpaYcT0",
+                    "title": "Продольный шпагат",
+                    "cell_id": "id_jR9PNFm1"
+                },
+                {
+                    "id": "id_WYuKTvFm",
+                    "title": "Прыжок в длину с места",
+                    "cell_id": "id_72iGgceV"
+                },
+                {
+                    "id": "id_XFnMwGrI",
+                    "title": "Наклон вперед и положения стоя",
+                    "cell_id": "id_jR9PNFm1"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "Сед из положения лежа на спине, руки за головой",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "Приседание на одной ноге",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Переворот силой в упор на перекладине",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "Бег на месте",
+                    "cell_id": "id_cQ6IwjC2"
+                },
+                {
+                    "id": "id_ZaOfgYcn",
+                    "title": "Прыжок в высоту",
+                    "cell_id": "id_72iGgceV"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__В отечественной спортивной теории принято различать основные виды физических способностей. Сколько их?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "3"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "7"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "5",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__В зависимости от режима мышечного сокращения, различают следующие виды силы:__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Статическая и абсолютная"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Динамическая и специфическая"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Статическая и динамическая",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Какие свойства заключены в основе проявления быстроты?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Определяющие возможности человека выполнять движения  точно и в полном объеме"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Определяющие возможности человека выполнять движения с максимальной частотой длительное время"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Определяющие возможности человека выполнять движения с максимальной частотой, а также перемещать тело или его отдельные  звенья в пространстве за минимально короткое время",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Что является мерилом выносливости?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Максимальная амплитуда  выполнения упражнений"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Количество точно выполненных бросков мяча"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Время, в течение которого человек способен поддерживать заданную интенсивность деятельности",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Уровень развития гибкости необходимо постоянно контролировать. В чем измеряется подвижность в том или ином суставе?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Только в градусах"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Только в линейных измерениях"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "В градусах или линейных измерениях ",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите один верный ответ"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__По каким критериям определяют ловкость (координационные способности)?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "Координационная сложность, направление движения, быстрота выполнения движения"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "Координационная сложность, точность движения, статическая сила"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "Координационная сложность, точность движения, быстрота выполнения движения",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    }
+]

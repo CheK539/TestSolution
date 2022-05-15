@@ -1,0 +1,540 @@
+[
+    {
+        "type": "radio",
+        "legend": "Метод наружного осмотра называют...",
+        "fields": [
+            {
+                "text": "пульсометрией"
+            },
+            {
+                "text": "спирометрией"
+            },
+            {
+                "text": "соматометрией",
+                "correct": true
+            },
+            {
+                "text": "кардиометрией"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Для оценки гармоничности телосложения используется...",
+        "fields": [
+            {
+                "text": "коэффициент гормонального статуса"
+            },
+            {
+                "text": "коэффициент пропорциональности",
+                "correct": true
+            },
+            {
+                "text": "ортостатический коэффициент"
+            },
+            {
+                "text": "коэффициент полезного действия"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Привычную позу человека в вертикальном положении называют...",
+        "fields": [
+            {
+                "text": "привычкой"
+            },
+            {
+                "text": "позицией"
+            },
+            {
+                "text": "прямохождением"
+            },
+            {
+                "text": "осанкой",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "checkbox",
+        "legend": "К объективным показателям текущего состояния организма относятся:",
+        "fields": [
+            {
+                "text": "особенности самочувствия"
+            },
+            {
+                "text": "усталость"
+            },
+            {
+                "text": "наличие болезненных ощущений"
+            },
+            {
+                "text": "устойчивость внимания",
+                "correct": true
+            },
+            {
+                "text": "координация движений",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "checkbox",
+        "legend": "Мышечная сила прогрессивно падает после:",
+        "fields": [
+            {
+                "text": "25 лет"
+            },
+            {
+                "text": "30 лет"
+            },
+            {
+                "text": "35 лет"
+            },
+            {
+                "text": "40 лет",
+                "correct": true
+            },
+            {
+                "text": "45 лет",
+                "correct": true
+            },
+            {
+                "text": "50 лет",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "checkbox",
+        "legend": "При определении мышечного индекса у юношей хорошим результатом считается:",
+        "fields": [
+            {
+                "text": "30 %"
+            },
+            {
+                "text": "40 %"
+            },
+            {
+                "text": "50 %"
+            },
+            {
+                "text": "60 %",
+                "correct": true
+            },
+            {
+                "text": "70 %",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите и вставьте в таблицу правильное решение для предложенных ситуаций."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Какие необходимо провести измерения для оценки сердечно-сосудистой системы, чтобы определить уровень адаптационных возможностей организма человека и его функциональных резервов?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "w40"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_90htPO8x",
+                    "title": "объем грудной клетки"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "электроккардиограмма",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "количество актов дыхания"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "рост"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "тип мышления"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "быстрота реакции"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "артериальное давление",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "время задержки дыхания на вдохе"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "длина ног"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "теппинг-тест"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "пульс",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "вес"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "длина рук"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "жизненная емкость легких "
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите и вставьте в таблицу правильное решение для предложенных ситуаций."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Какие данные нужно знать для оценки дыхательной системы?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "",
+                    ""
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_90htPO8x",
+                    "title": "артериальное давление"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "время задержки дыхания на вдохе",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "количество актов дыхания"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "рост"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "тип мышления"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "быстрота реакции"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "объем грудной клетки",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "электрокардиограмма"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "длина ног"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "теппинг-тест"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "жизненная емкость легких",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "вес"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "длина рук"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "пульс"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите и вставьте в таблицу правильное решение для предложенных ситуаций."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Какие данные физического развития нужно знать при оценке функциональных проб для расчетов по формулам?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "",
+                    ""
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_90htPO8x",
+                    "title": "пульс"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "длина ног",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "артериальное давление"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "электрокардиограмма"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "тип мышления"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "быстрота реакции"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "вес",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "количество актов дыхания"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "объем грудной клетки"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "теппинг-тест"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "рост",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "жизненная емкость легких"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "время задержки дыхания на вдохе"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "длина рук",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Выберите и вставьте в таблицу правильное решение для предложенных ситуаций."
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__При проведении каких тестов можно оценить особенности психологических резервов человека?__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    "custom_h70"
+                ],
+                "colls": [
+                    "",
+                    ""
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_90htPO8x",
+                    "title": "артериальное давление"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "тип мышления",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "количество актов дыхания"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "жизненная емкость легких"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "длина ног"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "рост"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "теппинг-тест",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "электрокардиограмма"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "время задержки дыхания на вдохе"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "вес"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "быстрота реакции",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "объем грудной клетки"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "длина рук"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "пульс"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    }
+]

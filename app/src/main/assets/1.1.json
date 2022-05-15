@@ -1,0 +1,455 @@
+[
+    {
+        "type": "radio",
+        "legend": "Здоровье это:",
+        "fields": [
+            {
+                "text": "отсутствие болезней"
+            },
+            {
+                "text": "состояние полного физического, психического и социального благополучия"
+            },
+            {
+                "text": "состояние полного физического, психического и социального благополучия, а не только отсутствие болезней",
+                "correct": true
+            },
+            {
+                "text": "отсутствие болезней и состояние физического благополучия"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "К критериям оценки показателей физического здоровья относятся:",
+        "fields": [
+            {
+                "text": "показатели физической подготовленности и функционального состояния"
+            },
+            {
+                "text": "антропометрические показатели"
+            },
+            {
+                "text": "показателифункционального состояния"
+            },
+            {
+                "text": "показатели физического развития, физической подготовленности и функционального состояния",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Термин «безопасный» уровень здоровья ввел",
+        "fields": [
+            {
+                "text": "В.П. Петленко"
+            },
+            {
+                "text": "И.И. Брехман"
+            },
+            {
+                "text": "С.А. Душанин"
+            },
+            {
+                "text": "Г.Л. Апанасенко",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "К критериям оценки показателей физического развития относятся:",
+        "fields": [
+            {
+                "text": "экскурсия грудной клетки, уровень притязаний"
+            },
+            {
+                "text": "окружность грудной клетки, выносливость, жизненная ёмкость легких"
+            },
+            {
+                "text": "тип телосложения, темперамент, весо-ростовой индекс"
+            },
+            {
+                "text": "вес, рост, весо-ростовой индекс, тип телосложения",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Стрессоустойчивость является показателем...",
+        "fields": [
+            {
+                "text": "функционального состояния"
+            },
+            {
+                "text": "физического здоровья"
+            },
+            {
+                "text": "социального здоровья"
+            },
+            {
+                "text": "психического здоровья",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "К показателям социального здоровья относятся:",
+        "fields": [
+            {
+                "text": "целевые установки, степень признания, тип телосложения"
+            },
+            {
+                "text": "мировоззрение, уровень притязаний, степень признания",
+                "correct": true
+            },
+            {
+                "text": "самочувствие, настроение, стрессоустойчивость"
+            },
+            {
+                "text": "тип темперамента, нравственные ценности, антропометрические показатели"
+            }
+        ]
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Установите соответствие между критериями оценки качества здоровья и целевой направленностью их использования, разместив для этого указанные после таблицы критерии в соответствующих ячейках таблицы"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            ""
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Целевая направленность__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Критерии оценки качества здоровья__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__1__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Оценка физического здоровья"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__2__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Оценка психического здоровья"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_xAET7wBb"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__3__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Оценка социального здоровья"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_FDvu9JIz"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w10"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "функциональное состояние",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "настроение",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "наличие или отсутствие заболеваний",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "нравственные ценности",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "стрессоустойчивость",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "генетические показатели",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_SBt8bwxk",
+                    "title": "уровень притязаний",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "эмоциональное состояние",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "физическое развитие",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "самочувствие",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_gMuejE5p",
+                    "title": "степень признания",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "экономизация функций",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "физическая подготовленность",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_pZOea5Qn",
+                    "title": "целевые установки",
+                    "cell_id": "id_FDvu9JIz"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "МПК",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Установите соответствие между критериями оценки физического здоровья и конкретными показателями физического здоровья, разместив указанные после таблицы показатели в соответствующих ячейках таблицы"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            ""
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Критерии оценки физического здоровья__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Показатели физического здоровья__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__1__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Физическое развитие"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__2__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Физическая подготовленность"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_nzb98C6m"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__3__"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "Функциональное состояние"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_xAET7wBb"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w10"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "координационные способности",
+                    "cell_id": "id_nzb98C6m"
+                },
+                {
+                    "id": "id_bokIXTS3",
+                    "title": "артериальное давление",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "выносливость",
+                    "cell_id": "id_nzb98C6m"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "пробы с задержкой дыхания",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_o52b6E0u",
+                    "title": "весо-ростовой индекс",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "сила кисти",
+                    "cell_id": "id_nzb98C6m"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "12-минутный тест Купера",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "ЧСС в покое и после нагрузки",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "вес",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "количество воды в организме",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_YFHzdX8k",
+                    "title": "электрокардиограмма",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "становая сила",
+                    "cell_id": "id_nzb98C6m"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    }
+]

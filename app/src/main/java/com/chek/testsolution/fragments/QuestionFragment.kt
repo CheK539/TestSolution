@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.children
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.chek.testsolution.R
 import com.chek.testsolution.databinding.QuestionFragmentBinding
@@ -31,7 +32,7 @@ class QuestionFragment : Fragment() {
         const val TAG = "CorrectCount"
     }
 
-    private lateinit var questionViewModel: QuestionViewModel
+    private val questionViewModel: QuestionViewModel by viewModels()
     private lateinit var binding: QuestionFragmentBinding
     private lateinit var question: Question
     private lateinit var questionsData: QuestionsData
@@ -46,15 +47,21 @@ class QuestionFragment : Fragment() {
 
         fileAsset = (activity as AppCompatActivity).assets
         files = listOf(
-            QuestionsFile("singleQuestions_ru.txt", QuestionType.Single),
-            QuestionsFile("multiQuestions_ru.txt", QuestionType.Multiply),
-            QuestionsFile("singlePictureQuestions_ru.txt", QuestionType.PictureSingle),
-            QuestionsFile("multiPictureQuestions_ru.txt", QuestionType.PictureMultiply),
-            QuestionsFile("inputQuestions_ru.txt", QuestionType.Input),
-            QuestionsFile("orderQuestions_ru.txt", QuestionType.Order),
+            QuestionsFile("1.1.json", QuestionType.Single),
+            QuestionsFile("1.2.json", QuestionType.Single),
+            QuestionsFile("1.3.json", QuestionType.Single),
+            QuestionsFile("2.1.json", QuestionType.Single),
+            QuestionsFile("2.2.json", QuestionType.Single),
+            QuestionsFile("2.3.json", QuestionType.Single),
+            QuestionsFile("3.1.json", QuestionType.Single),
+            QuestionsFile("3.2.json", QuestionType.Single),
+            QuestionsFile("3.3.json", QuestionType.Single),
+            QuestionsFile("4.1.json", QuestionType.Single),
+            QuestionsFile("4.2.json", QuestionType.Single),
+            QuestionsFile("5.1.json", QuestionType.Single),
+            QuestionsFile("5.2.json", QuestionType.Single),
+            QuestionsFile("5.3.json", QuestionType.Single),
         )
-
-        questionViewModel = ViewModelProvider(requireActivity()).get(QuestionViewModel::class.java)
 
         if (savedInstanceState == null)
             fileAsset?.let { questionViewModel.parseQuestions(it, files) }

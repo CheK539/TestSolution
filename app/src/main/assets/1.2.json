@@ -1,0 +1,576 @@
+[
+    {
+        "type": "radio",
+        "legend": "Методика БОС (биологически обратная связь) основана на:",
+        "fields": [
+            {
+                "text": "учете состояния здоровья"
+            },
+            {
+                "text": "использовании компьютерных игр",
+                "correct": true
+            },
+            {
+                "text": "учете биологических ритмов"
+            },
+            {
+                "text": "использовании тренажеров"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "По данным Арктического института, установлено изменяющихся сезонных периодов (биологических ритмов):",
+        "fields": [
+            {
+                "text": "8",
+                "correct": true
+            },
+            {
+                "text": "5"
+            },
+            {
+                "text": "4"
+            },
+            {
+                "text": "7"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "При проектировании здоровьесберегающей технологии прежде всего необходимо учитывать",
+        "fields": [
+            {
+                "text": "имеющиеся отклонения в состоянии здоровья"
+            },
+            {
+                "text": "пол и возраст"
+            },
+            {
+                "text": "имеющиеся отклонения в состоянии здоровья. пол и возраст",
+                "correct": true
+            },
+            {
+                "text": "физкультурно-спортивные интересы"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Термин «здоровьеформирующие технологии» ввел",
+        "fields": [
+            {
+                "text": "Бальсевич В.К.",
+                "correct": true
+            },
+            {
+                "text": "Брехман И.И."
+            },
+            {
+                "text": "Апанасенко Г.Л."
+            },
+            {
+                "text": "Петленко В.П."
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Кондиционирование осуществляется с целью",
+        "fields": [
+            {
+                "text": "закаливания организма",
+                "correct": true
+            },
+            {
+                "text": "физической подготовки"
+            },
+            {
+                "text": "проветривания помещения"
+            },
+            {
+                "text": "улучшения настроения"
+            }
+        ]
+    },
+    {
+        "type": "radio",
+        "legend": "Здоровьесберегающие технологии чаще всего включают в себя:",
+        "fields": [
+            {
+                "text": "асаныхатха-йоги, велоспорт, плавание"
+            },
+            {
+                "text": "асаныхатха-йоги, закаливание, бокс"
+            },
+            {
+                "text": "дыхательную гимнастику, асаныхатха-йоги, закаливание",
+                "correct": true
+            },
+            {
+                "text": "дыхательную гимнастику, мотогонки, закаливание"
+            }
+        ]
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Укажите правильную последовательность этапов проектирования здоровьесберегающих технологий, представленных далее"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            ""
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Этапы проектирования здоровьесберегающих технологий и их содержание__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__1__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__2__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_o52b6E0u"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__3__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_nCrbWFJk"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__4__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_ZOsI9WCG"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__5__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_xAET7wBb"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__6__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_VGZnD28z"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__7__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_YFHzdX8k"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__8__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_bokIXTS3"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w10"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "подбор упражнений для разминки",
+                    "cell_id": "id_VGZnD28z"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "выбор тестов для контроля за состоянием здоровья при данном заболевании",
+                    "cell_id": "id_ZOsI9WCG"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "определение физических качеств и функций организма, играющих важную роль в профилактике и лечении данного нарушения в состоянии здоровья",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "подбор упражнений для основной части занятия",
+                    "cell_id": "id_YFHzdX8k"
+                },
+                {
+                    "id": "id_pZOea5Qn",
+                    "title": "подбор упражнений для заключительной части занятия",
+                    "cell_id": "id_bokIXTS3"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "определение контингента, для которого проектируется здоровьесберегающая технология",
+                    "cell_id": "id_nCrbWFJk"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "выбор средств и методов для проектирования здоровьесберегающей технологии",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "определение нарушения в состоянии здоровья, для которого проектируется здоровьесберегающая технология",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Укажите правильную последовательность этапов проектирования здоровьесберегающей технологии для студентов, имеющих нарушение осанки"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            ""
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Этапы проектирования__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__1__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__2__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_o52b6E0u"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__3__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_nCrbWFJk"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__4__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_ZOsI9WCG"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__5__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_xAET7wBb"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__6__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_VGZnD28z"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__7__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_YFHzdX8k"
+                    }
+                ],
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__8__"
+                        ]
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_bokIXTS3"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w10"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_qH5aTUXO",
+                    "title": "подбор упражнений для укрепления мышц спины и верхнего плечевого пояса",
+                    "cell_id": "id_VGZnD28z"
+                },
+                {
+                    "id": "id_coVykFNL",
+                    "title": "подбор упражнений корригирующей гимнастики",
+                    "cell_id": "id_ZOsI9WCG"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "подбор упражнений для разминки",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_FDvu9JIz",
+                    "title": "подбор упражнений для заключительной части занятия",
+                    "cell_id": "id_YFHzdX8k"
+                },
+                {
+                    "id": "id_pZOea5Qn",
+                    "title": "контроль осанки",
+                    "cell_id": "id_bokIXTS3"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "подбор упражнений суставной гимнастики",
+                    "cell_id": "id_nCrbWFJk"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "подбор упражнений на расслабление",
+                    "cell_id": "id_xAET7wBb"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "определение вида и степени нарушения осанки",
+                    "cell_id": "id_iZTpCzKR"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    },
+    {
+        "type": "matching-table",
+        "data": {
+            "content": {
+                "body": "Укажите упражнения для разминки, для основной части занятий и для заключительной части, которые необходимо рекомендовать студентам, имеющим нарушения осанки, разместив выбранные из списка упражнения в соответствующих столбцах таблицы"
+            },
+            "table": [
+                [
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Разминка__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Основная часть занятия__.{.text-teal-5}"
+                        ]
+                    },
+                    {
+                        "isFixed": true,
+                        "value": [
+                            "__Заключительная часть занятия__.{.text-teal-5}"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "isFixed": false,
+                        "id": "id_iZTpCzKR"
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_o52b6E0u"
+                    },
+                    {
+                        "isFixed": false,
+                        "id": "id_coVykFNL"
+                    }
+                ]
+            ],
+            "style": {
+                "rows": [
+                    "",
+                    ""
+                ],
+                "colls": [
+                    "w30",
+                    "w30",
+                    "w30"
+                ]
+            },
+            "answers": [
+                {
+                    "id": "id_ZOsI9WCG",
+                    "title": "упражнения с гимнастической палкой",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_nzb98C6m",
+                    "title": "упражнения корригирующей гимнастики",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_VGZnD28z",
+                    "title": "дыхательная гимнастика",
+                    "cell_id": "id_coVykFNL"
+                },
+                {
+                    "id": "id_cQ6IwjC2",
+                    "title": "ходьба",
+                    "cell_id": "id_coVykFNL"
+                },
+                {
+                    "id": "id_fbYzSayN",
+                    "title": "упражнения суставной гимнастики",
+                    "cell_id": "id_iZTpCzKR"
+                },
+                {
+                    "id": "id_xAET7wBb",
+                    "title": "упражнения на расслабление",
+                    "cell_id": "id_coVykFNL"
+                },
+                {
+                    "id": "id_90htPO8x",
+                    "title": "упражнения (асаны) хатха-йоги",
+                    "cell_id": "id_o52b6E0u"
+                },
+                {
+                    "id": "id_nCrbWFJk",
+                    "title": "упражнения на равновесие",
+                    "cell_id": "id_o52b6E0u"
+                }
+            ],
+            "settings": {
+                "is_exist_advanced_style": true,
+                "is_exist_markdown": true,
+                "is_exist_image": true,
+                "show_incorrect": false,
+                "is_exist_mathjax": true
+            }
+        }
+    }
+]
